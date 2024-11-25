@@ -1,0 +1,122 @@
+<div class="order_now">
+  <div id="meal_selection"> 
+ <h3 id="meal_type">Select Meal Type</h3>
+ <mat-form-field>
+    <mat-label>Select your meal (required)</mat-label>
+    <select matNativeControl required [formControl]="selectFormControl" [(ngModel)]="thali">
+    <option label="--select something --"></option>
+      <option [value]="priceList?.VEG_THALI">Veg Thali</option>
+      <option [value]="priceList?.NON_VEG_THALI">Non Veg Thali</option>
+      <option [value]="priceList?.ALTERNATE">Alternate</option>
+      <option [value]="priceList?.DISHDUO">Dishduo</option>
+    </select>
+    @if (selectFormControl.hasError('required')) { 
+      <mat-error>This field is required</mat-error>
+    }
+    <mat-hint class="food_pick_txt">You can pick up your favorite food here</mat-hint>
+  </mat-form-field> 
+
+    <h3 class="selection_heading">Select Meal Time</h3 > <!--lunch,dinner,both-->
+    <div class="container"> 
+      <div class="btn btn-order order-width width-lunch menu_type">
+        <input type="radio" name="menu_type" id="lunch" value="lunch" [(ngModel)]="meal_plan"/>
+        <img
+          src="/assets/lunch.png"
+          width="60px"
+          class="animated fadeInDown order-width"
+          alt="Lunch"
+        />&nbsp;
+        <br />
+      </div>
+      <div class="btn btn-order order-width width-lunch menu_type">
+        <input type="radio" name="menu_type" id="dinner" value="dinner" [(ngModel)]="meal_plan"/>
+        <img
+          src="../../../assets/dinner.png"
+          width="60px"
+          class="animated fadeInDown order-width"
+          alt="dinner"
+        />&nbsp;
+        <br />
+      </div>
+      <div class="btn btn-order order-width width-lunch menu_type">
+        <input type="radio" name="menu_type" id="Both" value="Both" [(ngModel)]="meal_plan"/>
+        <img
+          src="../../../assets/lunch_dinner_both.png"
+          width="60px"
+          class="animated fadeInDown order-width"
+          alt="Lunch"
+        />&nbsp;
+        <br />
+      </div>
+      <div class="menu_text_type">
+        <p>Lunch</p>
+        <p>Dinner</p>
+        <p>Both</p>
+      </div>
+    </div>
+    <!-- <hr /> -->
+    <!-- <hr /> -->
+    <h3 class="selection_heading">Select Meal Plan</h3> <!--mini , standard-->
+    <div class="container">
+      <div class="btn btn-order order-width width-Veg menu_type">
+        <input type="radio" name="menu_type" id="Mini" [(ngModel)]="meal_type" value="mini" name="4"/>
+        <img
+          src="../../../assets/mini.png"
+          width="60px"
+          class="animated fadeInDown order-width"
+          alt="Mini"
+        />&nbsp;
+        <br />
+      </div>
+      <div class="btn btn-order order-width width-Standardmenu_type">
+        <input type="radio" name="menu_type" id="Standard" value="Standard" [(ngModel)]="meal_type" value="standard" name="5"/>
+        <img
+          src="../../../assets/standard.png"
+          width="60px"
+          class="animated fadeInDown order-width"
+          alt="Standard"
+        />&nbsp;
+        <br />
+      </div>
+      <div class="menu_text_type">
+        <p>Mini</p>
+        <p>Standard</p>
+      </div>
+    </div>
+    <hr />
+    <h6 id="delivery_charge">Delivery Charges: <i class="bi bi-currency-rupee"></i>45 per meal</h6>
+    <h3 class="selection_heading">Select Meal Duration</h3>
+    <div class="container">
+      <div class="btn btn-order order-width width-MTF menu_type">
+        <input type="radio" name="menu_type" id="one_month" [(ngModel)]="discount" value="one_month" name="6"/>
+        <!-- <div class="days">1</div>
+        <div class="days_txt">MONTH</div> -->
+        <label for="html">1 Month  Rs.({{priceList?.DISCOUNT_ONE_MONTH}})</label>
+      </div>
+      <div class="btn btn-order order-width width-MTF menu_type">
+        <input type="radio" name="menu_type" id="one_week" [(ngModel)]="discount" value="one_week" name="6"/>
+        <!-- <div class="days">1</div>
+        <div class="days_txt">WEEK</div> -->
+        <label for="html">1 Week  Rs.({{priceList?.DISCOUNT_1_WEEK}})</label><br>
+      </div>
+      <div class="menu_text_type">
+        <p>Save ! <i class="bi bi-currency-rupee"></i> 400</p>
+        <p>Save ! <i class="bi bi-currency-rupee"></i> 100</p>
+      </div>
+    </div>
+    <hr>
+    <h3 class="selection_heading">Quantity </h3><input type="number" [(ngModel)]="qunatity" name="7"/>
+    <hr>
+    <h3 class="selection_heading">Order Date</h3>
+    <div class="container">
+      <div class="btn btn-order order-width width-Order Date menu_type">
+        <input type="date" id="dateitem" name="dateitem" min={{minDate}} max={{maxDate}} [(ngModel)]="selectionDate" >
+        <br />
+      </div>
+      <div class="sumbit_btn"><button (click)="submit()">Submit</button></div>
+      <br>
+    </div>
+  </div>
+</div>
+  
+

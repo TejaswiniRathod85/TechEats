@@ -1,0 +1,14 @@
+<!-- <p>admin-header works!</p> -->
+<header class="headernav">
+  <div class="logo">
+    <img src="../../../../assets/logo.JPG" class="navlogo">
+    <h2 class="logonav">TechEats</h2>
+  </div>
+    <nav class="navbar">
+      <i class="fa fa-home items"></i><a (click)="gotourl('/admin/home')" [class.selected]="url === '/admin/home'">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <i class="fa-solid fa-list-ul items"></i><a (click)="gotourl('/admin/order-list')" [class.selected]="url === '/admin/order-list'">Order List</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <i class="fa-solid fa-list-ul items"></i><a (click)="gotourl('/admin/home-chef-list')" [class.selected]="url === '/admin/home-chef-list'">HomeChef List</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <i class="fa fa-sign-out items"></i><a (click)="gotourl('/admin/logout')" [class.selected]="url === '/admin/logout'">Logout</a>
+    </nav>
+  </header>
+ 

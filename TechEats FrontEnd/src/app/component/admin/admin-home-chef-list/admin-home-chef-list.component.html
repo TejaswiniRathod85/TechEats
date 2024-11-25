@@ -1,0 +1,22 @@
+<!-- <p>admin-home-chef-list works!</p> -->
+<div class="table_list">
+<h1>Home Chef List</h1>
+<table>
+    <tr>
+        <th>ChefId</th>
+        <th>Name</th>
+        <th>EmailId</th>
+        <th>Password</th>
+        <th>PhoneNum</th>
+        <th>Location</th>
+    </tr>
+    <tr *ngFor="let list of homeChefList">
+        <td>{{list?.homeChefId}}</td>
+        <td>{{list?.name}}</td>
+        <td>{{list?.emailId}}</td>
+        <td>{{list?.password}}</td>
+        <td>{{list?.phoneNum}}</td>
+        <td>{{list?.location}}</td>
+    </tr>
+</table>
+</div>

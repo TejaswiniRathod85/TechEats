@@ -1,0 +1,41 @@
+<!-- <p>foodie-my-order works!</p> -->
+<div class="table_list">
+<h1>My Order List</h1>
+<table>
+    <tr>
+        <th>Order Id</th>
+        <th>Order Date</th>
+        <th>User Id</th>
+        <th>User Name</th>
+        <th>Meal Plan</th>
+        <th>Meal Type</th>
+        <th>Meal Price</th>
+        <th>Duration</th>
+        <th>Quantity</th>
+        <th>Grand Total</th>
+        <th>Operation</th> 
+    </tr>
+    <tr *ngFor="let order of orderList">
+        <td>{{order?.orderId}}</td>
+        <td>{{order?.orderedDate}}</td>
+        <td>{{order?.user?.userId}}</td>
+        <td>{{order?.user?.fullName}}</td>
+        <td>{{order?.meal_plan}}</td>
+        <td>{{order?.meal_type}}</td>
+        <td>{{order?.meal_Price}}</td>
+        <td>{{order?.duration}}</td>
+        <td>{{order?.quantity}}</td>
+        <td>{{order?.grandTotal}}</td>
+        <td>
+            <div *ngIf="order?.isTodayDate">
+                <!-- <button (click)="deleteOrder(order?.orderId)">Cancel Order</button> -->
+                <!-- my-order.component.html -->
+                <button (click)="cancelOrder(order?.orderId)">Cancel Order</button>
+            </div>
+        </td>
+    </tr>
+</table>
+</div>
+
+  
+  

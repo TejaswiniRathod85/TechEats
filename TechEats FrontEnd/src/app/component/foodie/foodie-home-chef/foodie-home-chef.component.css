@@ -1,0 +1,294 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+/* footer */
+footer{
+    background-color: rgb(19, 18, 18);
+    color: white;
+    width: 100%;
+}
+.rights_footer p{
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+    font-size: 20px;
+}
+.address_txt{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+}
+.address_txt p{
+    font-size: 25px;
+}
+.address_txt i {
+    gap: 30rem;
+}
+.address_txt ul li{
+    list-style: none;  
+  font-size: 25px;
+  margin-top: 8px;
+}
+.social_media{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0;
+}
+.social_media ul{
+    display: flex;
+    gap:2rem;
+    text-decoration: none;
+    padding-left: 30px;
+}
+.social_media ul li{
+  list-style: none;  
+  font-size: 30px;
+  margin-top: 8px;
+}
+.social_media ul li:hover{
+    cursor: pointer;
+    
+}
+/* Slider */
+section{
+    padding: 2rem ;
+}
+.container-fluid{
+    margin-top: 7%;
+}
+.home .container-fluid .slide{
+    display:inline-flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    gap: 1rem;
+}
+
+.slideshow_images .foodImg{
+    gap:5rem;
+}
+
+/* .home .container .slide img{
+    width: 80%;
+    height: 100%;
+} */
+
+.animate{
+    opacity: 0;
+    transform: translateY(30px);
+    transform-origin:center;
+    animation: anim 0.8s linear forwards;
+}
+@keyframes anim {
+    100%{
+        opacity: 1;
+        transform: translateZ(30px);
+    }
+}
+
+.h2_text{
+    padding:30px 0;
+    font-size: 50px;
+    opacity :0;
+    transform: translateZ(10px);
+    animation: anim 0.8s linear forwards;
+}
+.home_con{
+    border: 1px solid black;
+    /* color: */
+    background-color:palevioletred;
+    padding: 20px 10px;
+    font-size: 50px;
+    border-radius: 50px;
+}
+
+/* slide */
+.container-fluid{
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+}
+
+.figure{
+    position: relative;
+    left: 0;
+    width: 400%; 
+    animation: 10s slide forwards;
+}
+
+.slide{
+    position: relative;
+    width: 25%;
+    float: left;
+}
+
+/* .slide h1{
+    position: absolute;
+    font-size: 3em;
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+} */
+
+.slide img{
+    width: 100%;
+    height: 500px;
+    animation: slide 0.8s linear forwards;
+}
+
+@keyframes slide{
+    0%{
+        left:0;
+    }
+    10%{
+        left:0;
+    }
+    20%{
+        left:-100%;
+    }
+    30%{
+        left:-100%;
+    }
+    40%{
+        left:-200%;
+    }
+    50%{
+        left:-200%;
+    }
+    55%{
+        left:-300%;
+    }
+    65%{
+        left:-300%;
+    }
+    66%{
+        left:-200%;
+    }
+    74%{
+        left:-200%;
+    }
+    75%{
+        left:-100%;
+    }
+    85%{
+        left:-100%;
+    }
+    90%{
+        left:0;
+    }
+    1000%{ 
+        left:0;
+    }
+}
+
+/* Slideshow of food images */
+.slideshow{
+    margin-top: 40px;
+    background-color: #deeb55;
+}
+
+/* slideshow_heading */
+.slideshow_heading{
+    text-align: center;
+    font-size: 50px;
+    font-style: italic;
+}
+.slideshow_images{
+    overflow: hidden;
+    white-space: nowrap;
+    animation: bannermove 10s linear infinite;
+}
+@keyframes bannermove{
+ 0%{
+    transform: translate(0,0);
+ }
+ 100%{
+    transform: translate(-80%,0);
+ }
+}
+
+/* Option for meal in home page */
+#mealPlanRadio{
+    text-align: center;
+}
+#mealPlanRadio label{
+    display: inline-flex;
+}
+#mealPlanRadio h4{
+    margin-top: 5px;
+    padding: 10px;
+    border: 1px solid black;
+    cursor: pointer;
+}
+#mealPlanRadio .option_meal{
+    padding: 10px;
+}
+#mealPlanRadio h4:hover{
+    background-color: #D5e432;
+}
+#mealPlanRadio h4 a{
+    color: black;
+    text-decoration: none;
+}
+/* HIDE RADIO */
+[type=radio] { 
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  /* CHECKED STYLES*/
+  [type=radio]:checked + h4{
+    background-color: #D5e432;
+  } 
+
+.selection_meal {
+    display: inline-flex;
+    justify-content: center;
+  }
+ .selection_meal img{
+    width: 30%;
+    text-align: center;
+    padding: 5px;
+  }
+  .meal_button{
+    display: inline-flex;
+    justify-content: center;
+    padding:10px;
+  }
+  .meal_button h3{
+    margin-top: 5px;
+    padding: 8px;
+    border: 1px solid  #D5e432;
+    cursor: pointer;
+    background-color: #D5e432;
+    color: white;
+  }
+  .container{
+    padding-bottom: 30px;
+}
+.container img{
+    width: 250px;
+    height: 250px;
+    border-radius: 100%;
+    padding: 20px;
+}
+.container .card-body{
+    padding: 20px;
+}
+
+.container .row{
+    margin-left: 20px;
+}
+.card{
+    background: transparent;
+    backdrop-filter: blur(2px);
+    box-shadow: 0 0 20px;
+}

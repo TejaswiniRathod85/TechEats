@@ -1,0 +1,129 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.headernav{
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    padding: 0.1rem 5%;
+    background: #D5e432;
+    backdrop-filter: blur(25px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+i{
+    color: white;
+    font-size: 30px;
+}
+.navbar a{
+    font-size: 20px;
+    color: rgb(72, 16, 85);
+    text-decoration: none;
+    font-weight: 500;
+    margin: 0.25rem 1rem;
+    transition: .5s;
+    cursor: pointer;
+    
+}
+.navbar a:hover{
+    color:crimson;
+    font-size: 20px;
+    font-style: italic;
+    border: 2px solid rgba(0,0,0,.1);
+    background: rgba(0,0,0,.1);
+    backdrop-filter: blur(25px);
+    border-radius: 50px;
+    padding:5px 10px 5px 10px;
+}
+
+.navlogo{
+    width: 4vw;
+    border-radius: 50px;
+    height: 60px;
+}
+
+.logo{
+    display: flex;
+    gap: 2rem;
+}
+
+.logonav{
+    font-size: 2rem;
+    text-decoration: none;
+    font-weight: 700;
+    margin-top: 10px;
+}
+h2{
+    color:rgb(149, 23, 149);
+}
+
+
+/* .headernav .main{
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    padding: 0.2rem 0.5%;
+    background:#D5e432;
+    backdrop-filter: blur(25px);
+    display: flex;
+    justify-content:flex-end;
+    z-index: 100;
+    margin-top: 40px;
+}
+i{
+    color: white;
+}
+.items a{
+    padding: 0;
+    margin: 0;
+}
+.main a{
+    font-size: 1.5rem;
+    color: rgb(72, 16, 85);
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0.5rem 1.5rem;
+    margin: 0.5rem 0.75rem;
+    transition: .5s;
+    cursor: pointer;
+}
+.main a:hover{
+    color:crimson;
+    font-size: 20px;
+    font-style: italic;
+    border: 2px solid rgba(0,0,0,.1);
+    background: rgba(0,0,0,.1);
+    backdrop-filter: blur(25px);
+    border-radius: 50px;
+    padding:2px 15px 2px 15px;
+}
+
+.main .items{
+    margin-top: 0.75rem ;
+    font-size: 25px;
+}
+
+Logo text it will help to come behind the logo image
+.headernav .logo{
+    display: flex;
+    gap: 2rem;
+}
+Logo image
+.headernav .logo img{
+    width: 5vw;
+    border-radius: 50px;
+}
+it will center the name of application
+.headernav .logonav {
+    font-size: 2rem;
+    text-decoration: none;
+    font-weight: 700;
+    margin-top: 20px;
+} */

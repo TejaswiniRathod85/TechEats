@@ -1,0 +1,15 @@
+<!-- <p>foodie-header works!</p> -->
+<header class="headernav">
+  <div class="logo">
+    <img src="../../../assets/f.png" class="navlogo">
+    <h2 class="logonav">TechEats</h2>
+  </div>
+    <nav class="navbar">
+      <i class="fa fa-home items"></i><a (click)="routerToLink('/foodie/home')" [class.selected]="url === '/foodie/home'">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <i class="fa-solid fa-kitchen-set items"></i><a (click)="routerToLink('/foodie/home-chef')" [class.selected]="url === '/foodie/home-chef'">HomeChef</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <i class="fa-solid fa-bowl-food items"></i><a (click)="routerToLink('/foodie/meal-plan')" [class.selected]="url === '/foodie/meal-plan'">Meal Plan</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <!-- <i class="fa-solid fa-utensils items"></i><a (click)="routerToLink('/foodie/order-now')" [class.selected]="url === '/foodie/order-now'">Order Now</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -->
+      <i class="fa-solid fa-kitchen-set items"></i><a (click)="routerToLink('/foodie/my-order')" [class.selected]="url === '/foodie/my-order'">My Order List</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <i class="fa fa-sign-out items"></i><a (click)="routerToLink('/foodie/logout')" [class.selected]="url === '/foodie/logout'">Logout</a>
+    </nav>
+  </header>

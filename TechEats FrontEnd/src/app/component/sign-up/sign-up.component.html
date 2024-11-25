@@ -1,0 +1,111 @@
+<!-- <p>sign-up works!</p> -->
+<div class="bgimg">
+  <div class="left_side">
+    <img src="../../../assets/about-us-bgimg.jpg" >
+  </div>
+  <div id="spec" class="right_side">
+    <div class="cor form">
+      <legend class="reg">
+        <h1>Registration with us</h1>
+      </legend>
+      <br />
+      <div
+        *ngIf="errorMessage && errorMessage !== ''"
+        class="error"
+        id="errordiv"
+      >
+        {{ errorMessage }}
+      </div>
+      <!-- <label for="full name">
+        Fullname<br /> -->
+        <input
+          type="text"
+          class="form1"
+          id="fullname"
+          placeholder="Enter your FullName"
+          [(ngModel)]="fullName"
+          [ngModelOptions]="{ standalone: true }"
+        /> 
+      <!-- </label> -->
+      <br /><br />
+      <!-- <label for="Email">
+        Email<br /> -->
+        <input
+          type="text"
+          class="form1"
+          id="email"
+          placeholder="example@gmail.com"
+          [(ngModel)]="email"
+          [ngModelOptions]="{ standalone: true }"
+        /> 
+      <!-- </label> -->
+      <br /><br />
+      <!-- <label for="phone number"
+        >Phone Number<br /> -->
+        <input
+          type="text"
+          class="form1"
+          id="PhoneNumber"
+          placeholder="Enter Phone Number"
+          [(ngModel)]="phone"
+          [ngModelOptions]="{ standalone: true }"
+        /> 
+        <!-- </label> -->
+        <br /><br />
+      <!-- <label for="password">
+        Password<br /> -->
+        <input
+          type="password"
+          class="form1"
+          id="password"
+          placeholder="Enter password"
+          [(ngModel)]="password"
+          [ngModelOptions]="{ standalone: true }"
+        /> 
+      <!-- </label> -->
+      <br /><br />
+      <!-- <label for="address"
+        >Address<br /> -->
+        <textarea
+          id="address"
+          name="address"
+          rows="4"
+          cols="25"
+          [(ngModel)]="address"
+          [ngModelOptions]="{ standalone: true }" class="label_txt" placeholder="Enter Delivery Address"
+        ></textarea>
+      <!-- </label> -->
+      <div id="checkbox1">
+        <label for="city" class="label_txt">Delivery location&nbsp;</label>
+        <select name="city" id="place" onclick="show()" [(ngModel)]="city">
+          <br /><br />
+          <option value="select " class="boxshad">select</option>
+          <br /><br />
+          <option value="Airoli" class="boxshad">Airoli</option>
+          <option value="Ghansoli" class="boxshad">Ghansoli</option>
+          <option value="Kopar Khairane" class="boxshad">Kopar Khairane</option>
+          <option value="vashi" class="boxshad">vashi</option>
+          <option value="Sanpada" class="boxshad">Sanpada</option>
+          <option value="Juinagar" class="boxshad">Juinagar</option>
+          <option value="Nerul" class="boxshad">Nerul</option>
+          <option value="Seawoods" class="boxshad">Seawoods</option>
+          <option value="CBD Belapur" class="boxshad">CBD Belapur</option>
+          <option value="Kharghar" class="boxshad">Kharghar</option>
+          <option value="kalamboli" class="boxshad">Kalamboli</option>
+          <option value="Kamothe" class="boxshad">Kamothe</option>
+          <option value="Panvel" class="boxshad">Panvel</option>         
+          </select
+        ><br/><br />
+      </div>
+      <div onload="Submit()" class="register_signup label_txt">
+        <div class="terms">
+          <input type="checkbox" name="terms" id="terms"/>
+        </div>
+        <div class="term">I Agree</div>
+        <a class="term_color" (click)="gotoTermsAndCondition()">terms & condition </a>
+        </div>
+      <button type="submit" id="sub" (click)="signup()">Submit</button>
+      <br>
+    </div>
+  </div>
+</div>

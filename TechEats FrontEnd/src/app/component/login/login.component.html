@@ -1,0 +1,41 @@
+<!-- <p>login works!</p> -->
+<div class="bgimg">
+  <div class="left_side">
+    <img src="../../../assets/about-us-bgimg.jpg" >
+  </div>
+  <div class="right_side">
+    <div class="form">
+    <h1>Login</h1>
+    <label for="emailId">
+      <input
+        type="text" 
+        class="box1"
+        id="email" 
+        placeholder="Enter Email"
+        [(ngModel)]="emailID"
+      />
+      <div class="error">{{ errormessage }}</div> </label
+    ><br />
+    <label for="password">
+      <input
+        type="password"
+        class="box"
+        id="password"
+        placeholder="Enter Password"
+        [(ngModel)]="password"
+      />
+      <div class="error">{{ errormessagep }}</div>
+      </label>
+      <br />
+    <button id="sub" class="btn1" (click)="login()">Sign in</button
+    >
+   <br />
+   <p>
+    <a class="btn" (click)="routeToForgotPassword()">Forgot Password? </a>
+  </p> 
+   <div class="signup">
+    <p>Don't have an account? <a (click)="routeToNewUser()">Signup</a></p>
+   </div>
+  </div>
+  </div>
+</div>

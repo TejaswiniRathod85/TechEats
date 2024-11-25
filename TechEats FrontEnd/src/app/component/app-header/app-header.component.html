@@ -1,0 +1,40 @@
+ <!-- <p>app-header works!</p> -->
+
+  <header class="headernav" >
+    <div class="logo">
+        <img src="../../../assets/f.png" class="navlogo">
+        <h2 class="logonav">TechEats</h2>
+    </div>
+    <nav class="navbar">
+      <i class="fa fa-home items"></i><a (click)="gotourl('')" [class.selected]="url === '/'">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <i class="fa fa-users items" aria-hidden="true"></i><a (click)="gotourl('about-us')" [class.selected]="url === '/about-us'">About us</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <i class="fa-solid fa-kitchen-set items"></i><a (click)="gotourl('/foodie/home-chef')" [class.selected]="url === '/foodie/home-chef'">Home chef</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <i class="fa fa-user-circle items"></i><a (click)="gotourl('login')" [class.selected]="url === '/login'">Login</a>
+    </nav>
+</header>
+
+
+
+<!-- <header class="headernav">
+     <a class="logo"><i class="fa fa-book"></i>Meal Box</a>
+      <img src="../../../assets/f.png">
+    <nav class="nav-items main">
+      <i class="fa fa-home items"></i><a (click)="gotourl('')" [class.selected]="url === '/'">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <i class="fa fa-users items" aria-hidden="true"></i><a (click)="gotourl('about-us')" [class.selected]="url === '/about-us'">About us</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <i class="fa-solid fa-kitchen-set items"></i><a (click)="gotourl('/foodie/home-chef')" [class.selected]="url === '/foodie/home-chef'">Home chef</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <i class="fa fa-user-circle items"></i><a (click)="gotourl('login')" [class.selected]="url === '/login'">Login</a>
+    </nav>
+  </header> -->
+<!-- 
+  <header class="header">
+      <a class="logo"><img src="../../../assets/f.png" class="brand-logo" alt="logo">Flavours Of Folksy</a>
+
+    <nav class="nav-items">
+      <i class="fa fa-home items"></i><a (click)="gotourl('')" [class.selected]="url === '/'">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <i class="fa fa-users items" aria-hidden="true"></i><a (click)="gotourl('about-us')" [class.selected]="url === '/about-us'">About us</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <i class="fa-solid fa-kitchen-set items"></i><a (click)="gotourl('/foodie/home-chef')" [class.selected]="url === '/foodie/home-chef'">Home chef</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <i class="fa fa-user-circle items"></i><a (click)="gotourl('login')" [class.selected]="url === '/login'">Login</a>
+    </nav>
+  </header> -->
+
+   

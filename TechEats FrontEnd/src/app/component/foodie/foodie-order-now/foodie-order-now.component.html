@@ -1,0 +1,46 @@
+<!-- <p>foodie-order-now works!</p> -->
+<div id="bg_bill">
+<div id="table_bg">
+    <h2>Payment Receipt</h2>
+    <hr class="dashed_line"> 
+ <table border="3" id="meal-titles">
+    <tr>
+        <td class="meal_title1">Meal Price</td>
+        <td class="meal_value">{{meal_Price}}</td>
+    </tr>
+    <tr>
+        <td class="meal_title1">Meal Plan</td>
+        <td class="meal_value">{{meal_plan}}</td>
+    </tr>
+    <tr>
+        <td class="meal_title1">Qunatity</td>
+        <td class="meal_value">{{quantity}}</td>
+    </tr>
+    <tr>
+        <td class="meal_title1">Meal Type</td>
+        <td class="meal_value">{{meal_type}}</td>
+    </tr>
+    <tr>
+        <td class="meal_title1">Duration</td>
+        <td *ngIf="duration === 'ONE_MONTH'" class="meal_value">One Month</td>
+        <td *ngIf="duration === 'ONE_WEEK'" class="meal_value">One Week</td>
+    </tr>
+    <tr>
+        <td class="meal_title1">Tax</td>
+        <td class="meal_value">{{tax}}</td>
+    </tr>
+</table>
+<hr class="dashed_line"> 
+<div id="grand-total">
+    <div class="grand_total_value">
+        <td><b>Grand Total</b></td>
+    </div>
+    <div id="grand_total_value">
+        <td>{{grandTotal}}</td>
+    </div>
+</div> 
+<hr class="dashed_line"> 
+<button (click)="addPayment()">Pay Now</button>
+</div> 
+</div>
+

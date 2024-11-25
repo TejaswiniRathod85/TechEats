@@ -1,0 +1,53 @@
+table,th,td{
+    /* border: 2px solid #000000; */
+    border: 2px solid white;
+    align-items: center;
+    margin: auto;
+    padding: 10px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 30%;
+    font-size: 20px;
+    color:lavender;
+}
+th,td{
+    text-align: center;
+    padding: 10px;
+    
+}
+h1{
+    font-weight: bold;
+    font-size: 50px;
+    text-align: center;
+    color: aliceblue;
+}
+.box{
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.361);
+}
+.table_list{
+    background-image: url('../../../../assets/adminOrderListbg.jpg');
+    width: 100%;
+    min-height: 94.5vh;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    margin-top: 40px;
+    position: fixed;
+}
+.table_list h1{
+    padding-top: 50px;
+    margin-left:300px;
+}
+table{
+    outline: 1px solid black;
+    outline: none;
+    margin: 1rem 40rem ;
+    padding: 2rem;
+    width: 40%;
+    border-radius: 5px;
+    background:transparent;
+    backdrop-filter: blur(2px);
+    box-shadow: 0 0 20px;
+    position: fixed;
+    background-color:inherit;
+}

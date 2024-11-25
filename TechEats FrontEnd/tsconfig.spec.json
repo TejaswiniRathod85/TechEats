@@ -1,0 +1,34 @@
+"compilerOptions": {
+  "outDir": "./out-tsc/spec",
+  "types": [
+    "jasmine"
+  ],
+  "strict": true,
+  "esModuleInterop": true,
+  "allowSyntheticDefaultImports": true,
+  "noImplicitAny": true,
+  "moduleResolution": "node",
+  "allowSyntheticDefaultImports": true,
+  "esModuleInterop": true
+}{
+  "outDir": "./out-tsc/spec",
+  "types": [
+    "jasmine"
+  ],
+  "strict": true,
+  "esModuleInterop": true,
+  "allowSyntheticDefaultImports": true
+}/* To learn more about this file see: https://angular.io/config/tsconfig. */
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "outDir": "./out-tsc/spec",
+    "types": [
+      "jasmine"
+    ]
+  },
+  "include": [
+    "src/**/*.spec.ts",
+    "src/**/*.d.ts"
+  ]
+}

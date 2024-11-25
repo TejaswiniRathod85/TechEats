@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.order_now{
+    /* background-image: url('../../../../assets/order_now_bg.jpeg'); */
+    background-image: url('../../../../assets/bg_mealplan.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color:white;
+    margin-top: 0px;
+}
+#meal_type{
+    margin-top: 25px; 
+}
+.order_now #meal_type{
+    padding-top: 50px;
+    padding-bottom: 2px;
+}
+#meal_selection{
+    padding-left: 250px;
+} 
+.food_pick_txt{
+    font-size: 15px;
+}
+
+.days_txt{
+    display: flex;
+    flex-direction: row;
+}
+.selection_heading{
+    margin-top: 50px;
+}
+
+.container  .btn {
+    display: inline-flex;
+    border: 1px solid white;
+    padding: 10px;
+    margin: 5px;
+}
+.container.btn p {
+    display: block;
+    align-items: center;
+}
+
+.btn:hover {
+    background-color:#D5e432;
+}
+
+.container .menu_text_type{
+    display: flex;
+    padding: 10px;
+    font-size: 20px;
+    gap:3rem;
+}
+/* HIDE RADIO */
+/* [type=radio] { 
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+   */
+
+   [type=radio]:checked +img{
+    background-color: #D5e432;
+  } 
+  [type=radio]:checked + label{
+    background-color: #D5e432;
+  } 
+
+
+hr {
+    width: 50%;
+    margin-left: 0;
+    margin-top: 20px;
+    border: 0;
+    border: 2px solid #eee;
+}
+
+#delivery_charge{
+    margin-top: 10px;
+    font-size: 25px;
+}
+
+label{
+    color: white;
+}
+
+button{
+    padding: 2px 20px;
+    background-color: #D5e432;
+    color: #eee;
+    font-size: 20px;
+    border: none;
+    margin-top: 10px;
+}
